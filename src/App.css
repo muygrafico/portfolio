@@ -11,6 +11,32 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 700px) {
+  .logo.react, .logo.rails, .logo.thumbnail {
+    box-sizing: border-box;
+    padding: .5em;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .react {
+    position: absolute;
+    top: 10px;
+    left: calc(5% + 20px);
+  }
+
+  .rails {
+    position: absolute;
+    top: 0;
+    right: calc(5% + 20px);
+  }
+
+  .thumbnail {
+    z-index: 1;
+    position: relative;
+  }
+}
+
 .logo {
   height: 12em;
   padding: 1.5em;
@@ -20,11 +46,9 @@
 
 .logo.thumbnail {
   border-radius: 50%;
-  object-fit: cover;
 }
 
 .logo:hover {
-  cursor: pointer;
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
